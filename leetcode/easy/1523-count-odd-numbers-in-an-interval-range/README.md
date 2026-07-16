@@ -33,22 +33,20 @@ Explanation: The odd numbers between 8 and 10 are [9].
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.9 MB  
-**Submitted:** 2026-07-16T16:42:28.831Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 41.8 MB (beats 90.22%)  
+**Submitted:** 2026-07-16T16:46:28.850Z  
 
 ```java
 class Solution {
     public int countOdds(int low, int high) {
-        int count =0;
-        for(int i=low;i<=high/2;i++){
-            if(i%2 !=0){
-                count++;
-            }
-            
+        int count = (high - low) / 2;
+
+        if (low % 2 != 0 || high % 2 != 0) {
+            count++;
         }
-        return count*2;
-        
+
+        return count;
     }
 }
 ```
