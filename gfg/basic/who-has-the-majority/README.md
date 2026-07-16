@@ -27,7 +27,7 @@ Explanation: frequency of 1 is 1.frequency of 7 is 1.Since 1 < 7, return 1.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-16T06:41:11.971Z  
+**Submitted:** 2026-07-16T06:41:17.787Z  
 
 ```java
 class Solution {
