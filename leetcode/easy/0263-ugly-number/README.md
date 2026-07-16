@@ -47,8 +47,8 @@ Explanation: 14 is not ugly since it includes the prime factor 7.
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 98.96%)  
-**Memory:** 42.8 MB (beats 15.01%)  
-**Submitted:** 2026-07-16T17:17:52.496Z  
+**Memory:** 42.7 MB (beats 32.93%)  
+**Submitted:** 2026-07-16T17:18:10.501Z  
 
 ```java
 class Solution {
