@@ -22,34 +22,29 @@ Output: 2 0
 Explanation: There are 2 odd elements (1, 1) and no even elements.
 ```
 
+ **Constraints:** 
+1 <= arr.size <= 106
+1 <= arr[i] <= 106
+
 ## Solution
 
-**Language:** Java  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T13:36:23.133Z  
+**Submitted:** 2026-07-17T14:25:25.960Z  
 
-```java
-class Solution {
-    public int[] countOddEven(int[] arr) {
-        // Code here
-        int codd = 0;
-        int ceven =0;
-        for(int i=0;i<arr.length;i++){
-            if(arr[i] % 2 != 0){
-                codd++;
-            }
-            else{
-                ceven++;
-            }
-            
-        }
-        int[] ans = new int[2];
-        ans[0]=codd;
-        ans[1]=ceven;
-        return ans;
-    }
-}
+```py
+class Solution:
+	def countOddEven(self, arr):
+		#Code here
+		even = 0 
+		odd = 0
+		for i in range(len(arr)):
+		    if arr[i]%2 == 0:
+		        even += 1
+		    else:
+		        odd += 1
+		return odd,even
 ```
 
 ---
