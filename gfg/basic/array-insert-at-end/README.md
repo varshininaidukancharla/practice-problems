@@ -31,7 +31,7 @@ Explanation: After inserting 50 at the end, we have array elements as 1 2 3 50.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-17T13:20:58.775Z  
+**Submitted:** 2026-07-17T13:21:02.675Z  
 
 ```java
 class Solution {
