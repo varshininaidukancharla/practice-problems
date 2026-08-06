@@ -33,7 +33,7 @@ s contains only alphabetic characters (both uppercase and lowercase).
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-12T03:56:32.444Z  
+**Submitted:** 2026-08-06T07:44:53.372Z  
 
 ```java
 class Solution {
@@ -41,7 +41,7 @@ class Solution {
         // code here
         String rev = "";
         for(int i=s.length()-1;i>=0;i--){
-            rev += s.charAt(i);
+            rev+=s.charAt(i);
         }
         return rev;
     }
