@@ -40,31 +40,31 @@ Explanation: 2 does not exist in nums so return -1
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.4 MB  
-**Submitted:** 2026-08-14T17:14:14.400Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 47.8 MB (beats 96.35%)  
+**Submitted:** 2026-09-01T11:13:33.413Z  
 
 ```java
 class Solution {
-    public int search(int[] nums,int target) {
+    public int search(int[] nums, int target) {
+        int n= nums.length;
         int l=0;
-        int r=nums.length-1;
-
-        while(l<=r){
-            int mid=l+(r-l)/2;
-
-            if(nums[mid]==target){
+        int h=nums.length-1;
+        
+        while(l<=h){
+            int mid=l+(h-l)/2;
+            if(nums[mid]== target){
                 return mid;
             }
-            else if(nums[mid]<target){
+            if(nums[mid]<target){
                 l=mid+1;
             }
             else{
-                r=mid-1;
+                h=mid-1;
             }
         }
-
         return -1;
+        
     }
 }
 ```
