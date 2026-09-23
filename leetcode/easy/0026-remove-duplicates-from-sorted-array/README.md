@@ -62,30 +62,21 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 7.12%)  
-**Memory:** 46.6 MB (beats 63.44%)  
-**Submitted:** 2026-09-02T13:42:48.054Z  
+**Runtime:** 1 ms (beats 77.48%)  
+**Memory:** 46.7 MB (beats 62.73%)  
+**Submitted:** 2026-09-23T05:31:37.391Z  
 
 ```java
-import java.util.*;
-
 class Solution {
     public int removeDuplicates(int[] nums) {
-
-        HashSet<Integer> set = new HashSet<>();
-
-        int k = 0;
-
-        for (int i = 0; i < nums.length; i++) {
-
-            if (!set.contains(nums[i])) {
-                set.add(nums[i]);
-                nums[k] = nums[i];
-                k++;
+        int i=0;
+        for(int j=1;j<nums.length;j++){
+            if(nums[j]!=nums[i]){
+                nums[i+1]=nums[j];
+                i++;
             }
         }
-
-        return k;
+        return i+1;
     }
 }
 ```
