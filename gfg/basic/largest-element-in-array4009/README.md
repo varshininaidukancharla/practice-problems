@@ -26,28 +26,24 @@ Output: 10
 Explanation: There is only one element which is the largest.
 ```
 
-**Constraints:
-**1 <= arr.size()<= 106
-0 <= arr[i] <= 106
-
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T06:41:42.207Z  
+**Submitted:** 2026-09-25T05:48:15.056Z  
 
 ```java
 class Solution {
     public static int largest(int[] arr) {
         // code here
-        int maxe=arr[0];
-        for(int i=1;i<arr.length;i++){
-            if(arr[i]>maxe){
-                maxe= arr[i];
+        int largest = Integer.MIN_VALUE;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>largest){
+                largest = arr[i];
             }
         }
-        return maxe;
+        return largest;
     }
 }
 
