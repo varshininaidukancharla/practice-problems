@@ -28,34 +28,31 @@ Output: -1
 Explanation: The largest element of the array is 10 and the second largest element does not exist.
 ```
 
- **Constraints:** 
-2 ≤ arr.size() ≤ 105
-1 ≤ arr[i] ≤ 105
-
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T07:18:03.160Z  
+**Submitted:** 2026-09-25T05:50:53.989Z  
 
 ```java
 class Solution {
     public int getSecondLargest(int[] arr) {
         // code here
-        int n = arr.length;
-        int largest=-1;
-        int slargest=-1;
+        int n=arr.length;
+        int larg =-1;
+        int slarg = -1;
         for(int i=0;i<n;i++){
-            if(arr[i]>largest){
-                slargest=largest;
-                largest=arr[i];
-            }
-            else if(arr[i]<largest && arr[i]>slargest){
-                slargest = arr[i];
+            if(arr[i]>larg){
+                larg = arr[i];
             }
         }
-        return slargest;
+        for(int i=0;i<n;i++){
+            if(arr[i]>slarg && arr[i]!=larg){
+                slarg = arr[i];
+            }
+        }
+        return slarg;
     }
 }
 ```
