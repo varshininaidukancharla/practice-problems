@@ -58,19 +58,14 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:13:40.158Z  
+**Submitted:** 2026-10-14T15:14:25.098Z  
 
 ```java
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
-		Scanner sc = new Scanner(System.in);
+class Codechef {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
         int T = sc.nextInt();
 
@@ -88,18 +83,16 @@ class Codechef
 
             int ans = A[N - 1];
 
-            for (int i = 1; i <= K; i++) {
-                ans += A[N - 1 - i];
+            for (int i = 0; i < K; i++) {
+                ans += A[N - 2 - (i % (N - 1))];
             }
 
             System.out.println(ans);
         }
 
         sc.close();
-
-	}
+    }
 }
-
 ```
 
 ---
