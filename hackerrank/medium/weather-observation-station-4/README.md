@@ -28,7 +28,7 @@ For example, if there are three records in the table with **CITY** values 'New Y
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T01:26:24.323Z  
+**Submitted:** 2026-10-19T04:18:32.007Z  
 
 ```sql
 select count(city) - count(distinct city) from station
