@@ -43,15 +43,15 @@ Output: [0]
 
 **Language:** Java  
 **Runtime:** 0 ms  
-**Memory:** 42 MB  
-**Submitted:** 2026-11-23T12:38:32.536Z  
+**Memory:** 42.2 MB  
+**Submitted:** 2026-11-23T12:38:57.736Z  
 
 ```java
 class Solution {
     public void moveZeroes(int[] nums) {
         int n=nums.length;
         int left = 0;
-        for(int right=1;right<n;right++){
+        for(int right=0;right<n;right++){
             if(nums[right]!=0){
                 int temp=nums[right];
                 nums[right]=nums[left];
