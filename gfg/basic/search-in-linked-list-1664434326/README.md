@@ -4,7 +4,7 @@
 
 ## Problem
 
-Given a linked list with the head node and a key, the task is to check if the key is present in the linked list or not. 
+Given the  **head**  of a singly linked list and an integer  **key**, check if the key is present in the linked list or not.
 
  **Example:** 
 
@@ -27,7 +27,7 @@ Explanation: 4 is not present in Linked List.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T09:43:29.574Z  
+**Submitted:** 2026-11-26T04:12:42.633Z  
 
 ```java
 /* Structure of Linked List Node
@@ -44,12 +44,13 @@ class Node {
 class Solution {
     public boolean searchKey(Node head, int key) {
         // Code here
+    
         Node temp=head;
         while(temp!=null){
-            if(temp.data == key){
-                return true; 
+            if(temp.data==key){
+                return true;
             }
-            temp = temp.next;
+            temp=temp.next;
         }
         return false;
     }
