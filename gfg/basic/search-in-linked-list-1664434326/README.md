@@ -27,7 +27,7 @@ Explanation: 4 is not present in Linked List.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-26T04:12:42.633Z  
+**Submitted:** 2026-11-27T12:26:41.591Z  
 
 ```java
 /* Structure of Linked List Node
@@ -44,8 +44,7 @@ class Node {
 class Solution {
     public boolean searchKey(Node head, int key) {
         // Code here
-    
-        Node temp=head;
+        Node temp = head;
         while(temp!=null){
             if(temp.data==key){
                 return true;
@@ -53,6 +52,7 @@ class Solution {
             temp=temp.next;
         }
         return false;
+        
     }
 }
 ```
