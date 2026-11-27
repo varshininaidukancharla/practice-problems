@@ -31,7 +31,7 @@ Explanation: We can see that 1 is inserted at the end of the linked list.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T09:53:55.540Z  
+**Submitted:** 2026-11-27T12:53:16.278Z  
 
 ```java
 /*
@@ -48,15 +48,15 @@ class Node{
 class Solution {
     public Node insertAtEnd(Node head, int x) {
         // code here
-        Node node = new Node(x);
+        Node a=new Node(x);
         if(head==null){
-            return node;
+            return a;
         }
         Node temp=head;
-        while (temp.next!=null){
+        while(temp.next!=null){
             temp=temp.next;
         }
-        temp.next=node;
+        temp.next=a;
         return head;
     }
 }
